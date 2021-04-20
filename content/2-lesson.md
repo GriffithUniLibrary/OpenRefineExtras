@@ -67,12 +67,9 @@ There are options to indicate whether the dataset has column headers included an
 - Ensure the first row is used to create the column headings by checking the box `Parse next 1 line(s) as column headers`
 - Make sure the `Parse cell text into numbers, dates,` ... box is not checked, so OpenRefine doesn't try to automatically detect numbers. Parsing in this context refers to the way the software will interpret the format of the data.
 - Give the project a meaningful name such as `TrafficAccidentsCleanV1`
-- If all looks fine, click `Create Project`.
+- If all looks fine, click  `Create Project`.
 
 {% include figure.html img="20201209_OR_Preview_Screen.png" alt="Create Project" caption="Create a project in OpenRefine" width="75%" %}
-
-{% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
-
 
 -----
 
