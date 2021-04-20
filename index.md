@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-## Introduction to Data Wrangling with OpenRefine
+## Data Wrangling Extras with OpenRefine
 
 {% include figure.html img="2021OpenRefineScreenShot.jpg" alt="intro image here" caption="" width="75%" %}
 
