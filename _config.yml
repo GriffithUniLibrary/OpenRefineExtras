@@ -12,7 +12,7 @@ title-icon:
 # description and keywords for meta tags
 description: "extra lessons for wrangling data"
 keywords: "OpenRefine, data, data wrangling, data cleaning, lessons"
-featured-image: "/images/2021OpenRefineScreenShot.jpg"
+featured-image: "/images/2021OpenRefineScreenShot.png"
 
 # author settings for cc-by, appears in the footer
 author: Sharron Stapleton
@@ -21,7 +21,7 @@ github_username: stapletonsl
 # Need to add acknowledgement to Evan Wills
 
 # add the full url for the github repository
-repo: "https://github.com/GriffithUniLibrary/intro-data-wrangle/"
+repo: "https://github.com/GriffithUniLibrary/OpenRefineExtras/"
 
 # site urls
 # add the url for the domain,
@@ -29,7 +29,7 @@ repo: "https://github.com/GriffithUniLibrary/intro-data-wrangle/"
 url: https://GriffithUniLibrary.github.io
 # add subsection of the domain,
 # on gh-pages this is a / followed by the name of the repository
-baseurl: /intro-data-wrangle
+baseurl: /OpenRefineExtras
 # add search box to footer?
 search: true
 
