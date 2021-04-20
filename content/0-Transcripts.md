@@ -37,26 +37,10 @@ There are options to indicate whether the dataset has column headers included an
 
 {% include figure.html img="20201209_OR_Preview_Screen.png" alt="Create Project" caption="Create a project in OpenRefine" width="75%" %}
 
+
 {% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
 
-{% capture text %}
-- Check that you have Chrome, Chromium, Opera or MS Edge browser installed and set as your default browser. OpenRefine runs in your default browser. It will also run in Firefox, however some performance issues have been noted. It will not run correctly in Internet Explorer.
-{% endcapture %}
-{% include card.md header="Browser Requirements" text=text %}
-
-{% capture text %}
-- OpenRefine requires Java to be installed.  Check if your computer has Java and if not, select the *Windows kit with embedded Java* when downloading the software.
-- Download the latest software version from [http://openrefine.org](http://openrefine.org). 
-- Unzip the downloaded file into a directory by right-clicking and selecting `Extract ...`.   Name that directory something like OpenRefine.
-- Go to your newly created OpenRefine directory.
-- Move the folder to `c:\program files` (you may need administrator privileges to do this)
-- Launch OpenRefine by clicking the `openrefine.exe` file (this will launch a command prompt window, but you can ignore that and wait for the browser to launch)
-- If you are using a different browser, or OpenRefine does not automatically open for you, point your browser at [http://127.0.0.1:3333/](http://127.0.0.1:3333/) or `http://localhost:3333` to launch the program.
- {% endcapture %}
-{% include card.md header="Windows" text=text %}
   
-
-
 <p align="center">
   <a href="https://griffithunilibrary.github.io/intro-data-wrangle/"><-- BACK</a> |
   <a href="https://griffithunilibrary.github.io/intro-data-wrangle/content/1-intro.html">NEXT --></a>
