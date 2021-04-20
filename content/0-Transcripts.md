@@ -2,15 +2,31 @@
 title: Transcripts
 nav: true
 ---
-# Cleaning MSAzure speech-to-text transcripts
+## Cleaning MS Azure speech-to-text transcripts
 
-These steps will remove the additional rows which contain Speaker and Confidence information and split the time stamp from the transcript text.  
+These steps will remove the additional rows which contain speaker and confidence information and split the time stamp from the transcript text.  
 It does not include steps to clean transcription errors.
-Open Refine makes a copy of your transcript data, it does not use your raw transcript.  You can clean the transcript copy, then export the cleaned dataset.  It is a good idea to name your transcripts with a convention that includes raw and cleaned in the file name.  You can also set up folders for all the raw and cleaned transcripts. 
+
+Open Refine makes a copy of your transcript data, it does not use your raw transcript.  You can clean the transcript copy, then export the cleaned dataset.  
+
+It is a good idea to name your transcripts with a convention that includes raw and cleaned in the file name.  You can also set up folders for all the raw and cleaned transcripts. 
 
 -----
 
-## Download & install software
+### Create a Project
+
+Upload the transcript file from your computer.
+
+{% capture text %}
+- Choose `Create Project`
+- Select `Get data from this Computer`.
+- Select `Choose Files` and browse to select the transcript file `yourfilename.txt` from the folder it is saved to.
+- Either click `Open` or double-click on the filename to import it into OpenRefine.
+- Click `Next`.{% endcapture %}
+{% include card.md header="Create a project by uploading transcript file from your computer" text=text %}
+
+
+## Create the project
 
 {% capture text %}
 - Check that you have Chrome, Chromium, Opera or MS Edge browser installed and set as your default browser. OpenRefine runs in your default browser. It will also run in Firefox, however some performance issues have been noted. It will not run correctly in Internet Explorer.
