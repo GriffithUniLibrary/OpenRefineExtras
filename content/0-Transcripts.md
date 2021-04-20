@@ -4,12 +4,11 @@ nav: true
 ---
 ## Cleaning MS Azure speech-to-text transcripts
 
-These steps will remove the additional rows which contain speaker and confidence information and split the time stamp from the transcript text.  
-It does not include steps to clean transcription errors.
+These steps will remove the additional rows which contain speaker and confidence information and split the time stamp from the transcript text.  It does not include steps to clean transcription errors.
 
 Open Refine makes a copy of your transcript data, it does not use your raw transcript.  You can clean the transcript copy, then export the cleaned dataset.  
 
-It is a good idea to name your transcripts with a convention that includes raw and cleaned in the file name.  You can also set up folders for all the raw and cleaned transcripts. 
+It is a good idea to name your transcripts with a convention that includes `raw` and `clean` in the file name.  You can also set up folders for all the raw and cleaned transcripts. 
 
 -----
 
