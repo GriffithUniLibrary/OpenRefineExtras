@@ -98,12 +98,10 @@ Remove time stamps
 {% include card.md header="Option Two - for transcripts that need retain speaker tags" text=text %}
 
 {% capture alert %}Note: Different analysis software may require different formats for speaker tags.  
-*Leximancer*
-- Speaker names start with a capital letter on a new line, followed with a colon and a space, eg: Alan: . Source [Leximancer Manual](https://doc.leximancer.com/doc/LeximancerManual.pdf)
+*Leximancer* - Speaker names start with a capital letter on a new line, followed with a colon and a space, eg: Alan: . Source [Leximancer Manual](https://doc.leximancer.com/doc/LeximancerManual.pdf)
 
-*NVIVO*
--The speaker name must appear at the start of a line. It cannot be proceeded by any characters—including tabs and spaces.
--The speaker name can appear on the same line with the response or on a separate line above the response—as long as it is at the start of a line. Source [Using NVIVO](https://help-nv.qsrinternational.com/12/win/v12.1.99-d3ea61/Content/coding/automatic-coding-documents.htm)
+*NVIVO* -The speaker name must appear at the start of a line. It cannot be proceeded by any characters—including tabs and spaces.
+The speaker name can appear on the same line with the response or on a separate line above the response—as long as it is at the start of a line. Source [Using NVIVO](https://help-nv.qsrinternational.com/12/win/v12.1.99-d3ea61/Content/coding/automatic-coding-documents.htm)
 {% endcapture %}
 {% include alert.md text=alert color="warning" %}
 
