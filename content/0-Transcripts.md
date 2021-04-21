@@ -30,7 +30,7 @@ OpenRefine gives you a preview to show you how it has interpreted the file you h
 
 There are options to indicate whether the dataset has column headers included and whether OpenRefine should skip a number of rows before reading the data. 
 - Choose `UTF8` as the method of encoding as this should convert any 'smart' formatting into plain text.
-- Check the `Store blank cells as nulls` box.  This will remove all the blank rows from the transcript.
+- Uncheck the `Store blank cells as nulls` box.  This will remove all the blank rows from the transcript.
 - Check the `Ignore first` box add `1` line(s) at the beginning of file, to remove the first row which contains the total audio duration.
 - Give the project a meaningful name such as `TranscriptXYZCleanV1`
 - If all looks fine, click `Create Project`.
