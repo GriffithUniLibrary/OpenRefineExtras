@@ -37,14 +37,14 @@ These next steps will start the cleaning process, then open the project.
 
 {% capture text %}
 This option will remove every row that contains `Speaker` and `Confidence` information and move the `time stamp` into a separate column or remove altogether.
-- Go to Column `1`
+- Go to `Column 1`
 - Click down arrow, choose `Facet > Custom Text Facet`
-- In Expression box, type `value.contains(" | Confidence")`.  True & False results will display in Facet box.
+- In Expression box, type `value.contains("| Confidence")`.  True & false results will display in Facet box.
 - Select and include `true` results
 - Go to `All` column, select `Edit rows > Remove matching rows`. Results now how only the transcript text lines. 
 
 Move time stamp into separate column.
-- Go to Column `1`
+- Go to `Column 1`
 - Click down arrow, choose `Edit Column > Split into several columns`. Notice the time stamps all end in a separator with a space after `: `.
 - Tick  `by separator` 
 - At `Separator box` enter colon with a space after `: `.  N.B. The space is important, as there are other colons in the timestamp without spaces after. 
@@ -52,18 +52,19 @@ Move time stamp into separate column.
 
 You can now either remove the time stamp column or rename each column. 
 To rename:
-- Go to Column `1 1` (timestamp column)
+- Go to `Column 1 1` (time stamp column)
 - `Edit column > Rename this column`
 - Enter new colun name ie. Time stamp
-- Repeat for Column `1 2`
+- Repeat for `Column 1 2`
 
 To remove the column:
-- Go to Column `1 1` (timestamp column)
+- Go to `Column 1 1` (time stamp column)
 - `Edit column > Remove this column`
 
 To export results:
 - Go to `Export` button and export results in required format.  
 - Select `Comma-separated value (.csv)` file format for structured data in columns. The file will save with the `project name` into your `Downloads` folder.
+
 or
 - `tab-separated value (.tsv)` format
 - Select  `open with Notepad` 
