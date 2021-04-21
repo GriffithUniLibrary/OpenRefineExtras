@@ -2,7 +2,7 @@
 title: Transcripts
 nav: true
 ---
-## Cleaning MS Azure speech-to-text transcripts
+## Clean MS Azure speech-to-text transcripts
 
 These steps will remove the additional rows which contain speaker and confidence information and split the time stamp from the transcript text.  It does not include steps to clean transcription errors.
 
@@ -19,7 +19,7 @@ Upload the transcript file from your computer.
 - Select `Choose Files` and browse to select the transcript file `yourfilename.txt` from the folder it is saved to.
 - Either click `Open` or double-click on the filename to import it into OpenRefine.
 - Click `Next`.{% endcapture %}
-{% include card.md header="Create a project by uploading transcript file from your computer" text=text %}
+{% include card.md header="Upload the transcript file and create a project" text=text %}
 
 {% capture text %}
 OpenRefine gives you a preview to show you how it has interpreted the file you have uploaded or imported. 
@@ -31,9 +31,7 @@ There are options to indicate whether the dataset has column headers included an
 - Give the project a meaningful name such as `TranscriptXYZCleanV1`
 - If all looks fine, click `Create Project`.{% endcapture %}
 {% include card.md header="Preview and make changes" text=text %}
-
-{% include figure.html img="ORPreviewTranscript.png" alt="Create Project" caption="Create a project in OpenRefine" width="75%" %}
-
+{% include figure.html img="ORPreviewTranscript.png" alt="Create Project" caption="Create a project in OpenRefine" width="100%" %}
 
 {% capture text %}
 This option will remove every row that contains `Speaker` and `Confidence` information and move the `time stamp` into a sepearte column or remove altogether.
@@ -57,7 +55,6 @@ To remove
 - Go to Column `1 1` (timestamp column)
 - `Edit column > Remove this column`{% endcapture %}
 - {% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
-
 
 ### Option Two - for transcripts that need to identify speakers
 This option will 
