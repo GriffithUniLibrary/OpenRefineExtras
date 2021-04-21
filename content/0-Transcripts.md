@@ -14,7 +14,7 @@ It is helpful to name your transcripts with a convention that includes `raw` and
 
 {% capture text %}
 Upload the transcript file from your computer.
-- Launch OpenRefine [instructions](https://griffithunilibrary.github.io/intro-data-wrangle/content/2-lesson.html)
+- Launch OpenRefine. [Refresh your OpenRefine basic skills here](https://griffithunilibrary.github.io/intro-data-wrangle/.html)
 - Choose `Create Project`
 - Select `Get data from this Computer`.
 - Select `Choose Files` and browse to select the transcript file `yourfilename.txt` from the folder it is saved to.
