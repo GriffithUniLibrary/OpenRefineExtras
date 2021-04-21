@@ -25,7 +25,7 @@ Upload the transcript file from your computer.
 {% capture text %}
 OpenRefine gives you a preview to show you how it has interpreted the file you have uploaded or imported. 
 The transcript data should be displayed as a `Line-based text file`. 
-There are options to indicate whether the dataset has column headers included and whether OpenRefine should skip a number of rows before reading the data. 
+These next steps will start the cleaning process, then open the project.
 - Choose `UTF8` as the method of encoding as this should convert any 'smart' formatting into plain text.
 - Uncheck the `Store blank cells as nulls` box.  This will remove all the blank rows from the transcript.
 - Check the `Ignore first` box add `1` line(s) at the beginning of file, to remove the first row which contains the total audio duration.
@@ -58,9 +58,12 @@ To remove
 - `Edit column > Remove this column`{% endcapture %}
 {% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
 
-### Option Two - for transcripts that need to identify speakers
+{% capture text %}
+
 This option will 
 
+
+{% include card.md header="Option Two - for transcripts that need to identify speakers" text=text %}
 {% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
 
   
