@@ -14,6 +14,7 @@ It is a good idea to name your transcripts with a convention that includes `raw`
 
 {% capture text %}
 Upload the transcript file from your computer.
+- Launch OpenRefine [instructions](https://griffithunilibrary.github.io/intro-data-wrangle/content/2-lesson.html)
 - Choose `Create Project`
 - Select `Get data from this Computer`.
 - Select `Choose Files` and browse to select the transcript file `yourfilename.txt` from the folder it is saved to.
@@ -31,6 +32,7 @@ There are options to indicate whether the dataset has column headers included an
 - Give the project a meaningful name such as `TranscriptXYZCleanV1`
 - If all looks fine, click `Create Project`.{% endcapture %}
 {% include card.md header="Preview and make changes" text=text %}
+
 {% include figure.html img="ORPreviewTranscript.png" alt="Create Project" caption="Create a project in OpenRefine" width="100%" %}
 
 {% capture text %}
@@ -54,7 +56,7 @@ You can now either remove the time stamp column or rename each column. To rename
 To remove
 - Go to Column `1 1` (timestamp column)
 - `Edit column > Remove this column`{% endcapture %}
-- {% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
+{% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
 
 ### Option Two - for transcripts that need to identify speakers
 This option will 
