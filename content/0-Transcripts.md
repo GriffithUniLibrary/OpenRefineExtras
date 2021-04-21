@@ -4,11 +4,11 @@ nav: true
 ---
 ## Clean MS Azure speech-to-text transcripts
 
-These steps will remove the additional rows which contain speaker and confidence information and split the time stamp from the transcript text.  It does not include steps to clean transcription errors.
+These steps will remove the additional rows which contain speaker and confidence information and split the time stamp from the transcript text.  It does not include steps to clean audio transcription errors.
 
 Open Refine makes a copy of your transcript data, it does not use your raw transcript.  You can clean the transcript copy, then export the cleaned dataset.  
 
-It is a good idea to name your transcripts with a convention that includes `raw` and `clean` in the file name.  You can also set up folders for all the raw and cleaned transcripts. 
+It is helpful to name your transcripts with a convention that includes `raw` and `clean` in the file name.  You can also set up folders for all the raw and cleaned transcripts. See [Reproducible Research Steps] for more.
 
 -----
 
@@ -36,38 +36,64 @@ These next steps will start the cleaning process, then open the project.
 {% include figure.html img="ORPreviewTranscript.png" alt="Create Project" caption="Create a project in OpenRefine" width="100%" %}
 
 {% capture text %}
-This option will remove every row that contains `Speaker` and `Confidence` information and move the `time stamp` into a sepearte column or remove altogether.
+This option will remove every row that contains `Speaker` and `Confidence` information and move the `time stamp` into a separate column or remove altogether.
 - Go to Column `1`
 - Click down arrow, choose `Facet > Custom Text Facet`
 - In Expression box, type `value.contains(" | Confidence")`.  True & False results will display in Facet box.
 - Select and include `true` results
 - Go to `All` column, select `Edit rows > Remove matching rows`. Results now how only the transcript text lines. 
+
 Move time stamp into separate column.
 - Go to Column `1`
 - Click down arrow, choose `Edit Column > Split into several columns`. Notice the time stamps all end in a separator with a space after `: `.
 - Tick  `by separator` 
 - At `Separator box` enter colon with a space after `: `.  N.B. The space is important, as there are other colons in the timestamp without spaces after. 
 - Ok
-You can now either remove the time stamp column or rename each column. To rename:
+
+You can now either remove the time stamp column or rename each column. 
+To rename:
 - Go to Column `1 1` (timestamp column)
 - `Edit column > Rename this column`
 - Enter new colun name ie. Time stamp
 - Repeat for Column `1 2`
-To remove
+
+To remove the column:
 - Go to Column `1 1` (timestamp column)
-- `Edit column > Remove this column`{% endcapture %}
+- `Edit column > Remove this column`
+
+To export results:
+- Go to `Export` button and export results in required format.  
+- Select `Comma-separated value (.csv)` file format for structured data in columns. The file will save with the `project name` into your `Downloads` folder.
+or
+- `tab-separated value (.tsv)` format
+- Select  `open with Notepad` 
+- Select  `File > Save As > .txt ` {% endcapture %}
 {% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
 
 {% capture text %}
+This option will retain each identified speaker and remove the confidence rating and time stamp information.
+- Go to `Column 1` 
+- Select `Text filter`
+- Enter speaker name ie. `Speaker 1 |`. Results will display rows containing this text.
+- Go to `Column 1` 
+- `Edit cells > Transform`
+- In Expression box, delete `value` and enter the speaker details within quotation marks ie. `"Interviewer: "` or `"John: "` or using a de-identified ID number ie. `"ID 27456"` which is documented securely elsewhere.
+- Ok
+- Repeat these steps for each Speaker in the transcript.
 
-This option will 
-
-
+Remove time stamps
+- Go to `Column 1`. Notice the time stamps all end in a separator with a space after `: `.
+- `Edit cells > Split mulit-value cells`
+- Tick  `by separator` 
+- At `Separator box` enter colon with a space after `: `.  N.B. The space is important, as there are other colons in the timestamp without spaces after. 
+- Ok. New rows are displayed containing the time stamps.
+- Go to `Column 1`
+- `Text filter` 
+- Tick `regular expression` box and type: `\d\d\W\d\d\W\d\d` (you can copy and paste this into the box). This identifies and filters by the format of the time stamp ie. 00:10:23 as digit, digit, non-word character, digit, digit, non-word character, digit, digit. 
+- Select `All` Column
+- `Edit rows > remove matching rows` 
+- Close Facet box
+- Results will display transcript text without time stamps.{% endcapture %}
 {% include card.md header="Option Two - for transcripts that need to identify speakers" text=text %}
-{% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
 
-  
-<p align="center">
-  <a href="https://griffithunilibrary.github.io/intro-data-wrangle/"><-- BACK</a> |
-  <a href="https://griffithunilibrary.github.io/intro-data-wrangle/content/1-intro.html">NEXT --></a>
-</p> 
+{% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
