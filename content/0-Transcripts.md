@@ -29,7 +29,7 @@ There are options to indicate whether the dataset has column headers included an
 - Uncheck the `Store blank cells as nulls` box.  This will remove all the blank rows from the transcript.
 - Check the `Ignore first` box add `1` line(s) at the beginning of file, to remove the first row which contains the total audio duration.
 - Give the project a meaningful name such as `TranscriptXYZCleanV1`
-- If all looks fine, click `Create Project`.
+- If all looks fine, click `Create Project`.{% endcapture %}
 {% include card.md header="Preview and make changes" text=text %}
 
 {% include figure.html img="ORPreviewTranscript.png" alt="Create Project" caption="Create a project in OpenRefine" width="75%" %}
@@ -55,7 +55,7 @@ You can now either remove the time stamp column or rename each column. To rename
 - Repeat for Column `1 2`
 To remove
 - Go to Column `1 1` (timestamp column)
-- `Edit column > Remove this column`
+- `Edit column > Remove this column`{% endcapture %}
 - {% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
 
 
