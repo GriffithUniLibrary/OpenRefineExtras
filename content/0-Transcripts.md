@@ -69,10 +69,10 @@ or
 - `tab-separated value (.tsv)` format
 - Select  `open with Notepad` 
 - Select  `File > Save As > .txt ` {% endcapture %}
-{% include card.md header="Option One - for transcripts that don't need to identify speakers" text=text %}
+{% include card.md header="Option One - for transcripts that don't need to tag different speakers" text=text %}
 
 {% capture text %}
-This option will retain each identified speaker and remove the confidence rating and time stamp information.
+This option will retain each individual speaker tag, rename them, and remove the confidence rating and time stamp information.
 - Go to `Column 1` 
 - Select `Text filter`
 - Enter speaker name ie. `Speaker 1 |`. Results will display rows containing this text.
@@ -95,6 +95,6 @@ Remove time stamps
 - `Edit rows > remove matching rows` 
 - Close Facet box
 - Results will display transcript text without time stamps.{% endcapture %}
-{% include card.md header="Option Two - for transcripts that need to identify speakers" text=text %}
+{% include card.md header="Option Two - for transcripts that need retain speaker tags" text=text %}
 
 {% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
