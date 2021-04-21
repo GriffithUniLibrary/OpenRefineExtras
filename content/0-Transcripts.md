@@ -100,6 +100,6 @@ Remove time stamps
 {% capture alert %}Note: Different analysis software may require different formats for speaker tags.  
 **Leximancer requirements for interview transcript formatting**
 Identify the dialogue spoken by the interviewer using speaker name starting with a capital letter on a new line, and followed with a colon and a space, eg: Alan: . Leximancer has a setting in the Preprocessing Options called Apply Dialogue Tags which will automatically identify the dialogue tags.  From https://doc.leximancer.com/doc/LeximancerManual.pdf{% endcapture %}
-{% include alert.md text=alert color="information" %}
+{% include alert.md text=alert color="warning" %}
 
 {% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
