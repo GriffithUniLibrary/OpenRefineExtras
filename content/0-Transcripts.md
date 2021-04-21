@@ -8,7 +8,7 @@ These steps will remove the additional rows which contain speaker and confidence
 
 Open Refine makes a copy of your transcript data, it does not use your raw transcript.  You can clean the transcript copy, then export the cleaned dataset.  
 
-It is helpful to name your transcripts with a convention that includes `raw` and `clean` in the file name.  You can also set up folders for all the raw and cleaned transcripts. See [Reproducible Research Steps] for more.
+It is helpful to name your transcripts with a convention that includes `raw` and `clean` in the file name.  You can also set up folders for all the raw and cleaned transcripts. See [Reproducible-Research-Things](https://guereslib.github.io/Reproducible-Research-Things/) for more.
 
 -----
 
