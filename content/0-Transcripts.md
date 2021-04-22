@@ -106,4 +106,4 @@ The speaker name can appear on the same line with the response or on a separate 
 {% endcapture %}
 {% include alert.md text=alert color="warning" %}
 
-{% include button.md text="Watch the steps above on this video" link="https://vimeo.com/412189056/0d9031def0" color="info" %}
+{% include button.md text="Watch the steps above on this video" link="....." color="info" %}
