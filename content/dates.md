@@ -23,4 +23,4 @@ You need to assess each of the different date formats and add those to the first
 Then tell OpenRefine what you would like all the variations changed to in the second brackets. 
 - such as `'yyyy-MM-dd'` or `'yy-MM-dd'` or `'dd-MM-yyyy'` etc. 
 
-The functions are explained here [https://docs.openrefine.org/manual/grelfunctions/#date-functions] (https://docs.openrefine.org/manual/grelfunctions/#date-functions).
+The functions are explained here [https://docs.openrefine.org/manual/grelfunctions/#date-functions](https://docs.openrefine.org/manual/grelfunctions/#date-functions).
