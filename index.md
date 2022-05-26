@@ -12,12 +12,13 @@ layout: default
 Extra data wrangling lessons using OpenRefine such as:
 
 - Cleaning MS Azure speech-to-text transcripts
-- 
 
 {% include toc.html %}
 
 Hosted by [Griffith University Library](https://www.griffith.edu.au/library), {{ site.pub_year }}.
-  
+
 ------
 
 {% include credits.html %}
+
+Griffith University - CRICOS Provider Number 00233E.
