@@ -14,13 +14,14 @@ description: "extra lessons for wrangling data"
 keywords: "OpenRefine, data, data wrangling, data cleaning, lessons"
 featured-image: "/images/2021OpenRefineScreenShot.png"
 
-# author settings for cc-by, appears in the footer
+# author settings for cc-by-nc, appears in the footer
 author: Sharron Stapleton
 pub_year: 2021
 github_username: stapletonsl
 # Need to add acknowledgement to Evan Wills
 
 # add the full url for the github repository
+souce.code: "https://github.com/GriffithUniLibrary/open-refine-extras/"
 repo: "https://github.com/GriffithUniLibrary/open-refine-extras/"
 
 # site urls
