@@ -7,7 +7,7 @@ Learn extra data cleaning techniques with these lessons such as:
 
 - cleaning MS Azure speech-to-text transcripts 
 
-All materials in these lessons are licenced [CC BY\(https://creativecommons.org/licenses/by/4.0/).
+All materials in these lessons are licenced [CC BY-NC\(https://creativecommons.org/licenses/by-nc/4.0/).
 
 [Workshop-template-b](https://github.com/evanwill/workshop-template-b) by [evanwill](https://github.com/evanwill) is built using [Jekyll](https://jekyllrb.com/) on [GitHub Pages](https://pages.github.com/). The site is styled using Bootstrap with FontAwesome icons.
 
